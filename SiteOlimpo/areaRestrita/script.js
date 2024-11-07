@@ -8,14 +8,14 @@ window.addEventListener("DOMContentLoaded", function() {
         const link = document.createElement("link");
         link.id = "dark-mode-stylesheet";
         link.rel = "stylesheet";
-        link.href = "dark-mode.css";
+        link.href = "https://olimpo-dashboard.onrender.com/SiteOlimpo/areaRestrita/dark-mode.css";
         document.head.appendChild(link);
 
         // Altera a logo para a versão do modo escuro
-        logo.src = "../imagens/LogoFundoAzul.png";
+        logo.src = "https://olimpo-dashboard.onrender.com/SiteOlimpo/imagens/LogoFundoAzul.png";
         
         // Altera o modo para o botao do modo para o solzinho
-        modo.src = "../imagens/light_mode.png";
+        modo.src = "https://olimpo-dashboard.onrender.com/SiteOlimpo/imagens/light_mode.png";
         
     }
 });
@@ -32,10 +32,10 @@ document.getElementById("modoEscuro").addEventListener("click", function() {
         localStorage.removeItem("dark-mode");
 
         // Altera a logo para a versão do modo claro
-        logo.src = "../imagens/LogoFundoBranco.png";
+        logo.src = "https://olimpo-dashboard.onrender.com/SiteOlimpo/imagens/LogoFundoBranco.png";
 
         // Altera o modo para o botao do modo para a luazinha
-        modo.src = "../imagens/dark_mode.png";
+        modo.src = "https://olimpo-dashboard.onrender.com/SiteOlimpo/imagens/dark_mode.png";
     } else {
         // Caso contrário, cria e adiciona o CSS do modo escuro
         const link = document.createElement("link");
@@ -45,10 +45,10 @@ document.getElementById("modoEscuro").addEventListener("click", function() {
         document.head.appendChild(link);
 
         // Altera a logo para a versão do modo escuro
-        logo.src = "../imagens/LogoFundoAzul.png";
+        logo.src = "https://olimpo-dashboard.onrender.com/SiteOlimpo/imagens/LogoFundoAzul.png";
 
         // Altera o modo para o botao do modo para o solzinho
-        modo.src = "../imagens/light_mode.png";
+        modo.src = "https://olimpo-dashboard.onrender.com/SiteOlimpo/imagens/light_mode.png";
 
         // Armazena a preferência do modo escuro no localStorage
         localStorage.setItem("dark-mode", "true");
