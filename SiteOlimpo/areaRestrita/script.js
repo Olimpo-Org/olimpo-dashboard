@@ -41,7 +41,7 @@ document.getElementById("modoEscuro").addEventListener("click", function() {
         const link = document.createElement("link");
         link.id = "dark-mode-stylesheet";
         link.rel = "stylesheet";
-        link.href = "dark-mode.css";
+        link.href = "https://olimpo-dashboard.onrender.com/SiteOlimpo/areaRestrita/dark-mode.css";
         document.head.appendChild(link);
 
         // Altera a logo para a versão do modo escuro
