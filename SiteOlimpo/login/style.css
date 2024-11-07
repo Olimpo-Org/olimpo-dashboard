@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Archivo", sans-serif;
+    color: #FFFFFF;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    h1{
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 35px;
+    }
+}
+
+.container-dentro {
+    background-color: #5597FA;
+    display: flex;
+    width: 100%;
+    max-width: 700px; /* Aumentei um pouco o máximo para telas maiores */
+    height: 450px;
+    border-radius: 30px;
+    flex-direction: column;
+    gap: 25px;
+    padding: 80px 60px 60px 60px; 
+    /* Ajustei o padding para ficar melhor em telas menores */
+    box-sizing: border-box;
+    a{
+        font-size: 20px;
+    }
+    border: 2px solid rgb(15, 124, 226);
+}
+
+form {
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 90%;
+    max-width: 250px; /* Máximo de largura para inputs */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    opacity: 100%;
+    outline: none;
+    border: 2px solid rgb(114, 114, 114);
+}
+
+input::placeholder {
+    color: #CCCC;
+}
+
+button {
+    margin-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 40px;
+    background-color: #5597FA;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer; /* Melhorar a usabilidade */
+}
+
+button:hover{
+    background-color: #FFFFFF;
+    color: #5597FA;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .container-dentro {
+        padding: 20px 10px;
+    }
+
+    input {
+        max-width: 100%; /* Inputs ocupam a largura total disponível */
+    }
+
+    button {
+        width: 100%; /* Botão ocupa a largura total disponível */
+    }
+}
+
+.imgCasa{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.imgPredio{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.bordasVermelhas {
+    border: 2px solid red;
+}
+
+.error {
+    margin: 8px;
+    color: red;
+}
