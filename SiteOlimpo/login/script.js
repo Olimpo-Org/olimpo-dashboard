@@ -26,7 +26,6 @@ entrar.addEventListener("click", (event) => {
 
     
     fetch("https://olimpoapi.onrender.com/v1/admin/verify", {
-        mode: "no-cors",
         method: "POST",
         headers: {
             "Content-Type": "application/json",
